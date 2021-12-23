@@ -9,16 +9,17 @@
 /* Begin PBXBuildFile section */
 		E772A1FA2774DA690025AF0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772A1F92774DA690025AF0F /* AppDelegate.swift */; };
 		E772A1FC2774DA690025AF0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772A1FB2774DA690025AF0F /* SceneDelegate.swift */; };
-		E772A1FE2774DA690025AF0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772A1FD2774DA690025AF0F /* ViewController.swift */; };
+		E772A1FE2774DA690025AF0F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772A1FD2774DA690025AF0F /* CalendarViewController.swift */; };
 		E772A2032774DA6A0025AF0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E772A2022774DA6A0025AF0F /* Assets.xcassets */; };
 		E772A2062774DA6A0025AF0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E772A2042774DA6A0025AF0F /* LaunchScreen.storyboard */; };
+		E772A2122774E2290025AF0F /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = E772A2112774E2290025AF0F /* CalendarKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E772A1F62774DA690025AF0F /* CalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E772A1F92774DA690025AF0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E772A1FB2774DA690025AF0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E772A1FD2774DA690025AF0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E772A1FD2774DA690025AF0F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		E772A2022774DA6A0025AF0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E772A2052774DA6A0025AF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E772A2072774DA6A0025AF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E772A2122774E2290025AF0F /* CalendarKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +58,7 @@
 			children = (
 				E772A1F92774DA690025AF0F /* AppDelegate.swift */,
 				E772A1FB2774DA690025AF0F /* SceneDelegate.swift */,
-				E772A1FD2774DA690025AF0F /* ViewController.swift */,
+				E772A1FD2774DA690025AF0F /* CalendarViewController.swift */,
 				E772A2022774DA6A0025AF0F /* Assets.xcassets */,
 				E772A2042774DA6A0025AF0F /* LaunchScreen.storyboard */,
 				E772A2072774DA6A0025AF0F /* Info.plist */,
@@ -80,6 +82,9 @@
 			dependencies = (
 			);
 			name = CalendarApp;
+			packageProductDependencies = (
+				E772A2112774E2290025AF0F /* CalendarKit */,
+			);
 			productName = CalendarApp;
 			productReference = E772A1F62774DA690025AF0F /* CalendarApp.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +113,9 @@
 				Base,
 			);
 			mainGroup = E772A1ED2774DA680025AF0F;
+			packageReferences = (
+				E772A2102774E2290025AF0F /* XCRemoteSwiftPackageReference "CalendarKit" */,
+			);
 			productRefGroup = E772A1F72774DA690025AF0F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E772A1FE2774DA690025AF0F /* ViewController.swift in Sources */,
+				E772A1FE2774DA690025AF0F /* CalendarViewController.swift in Sources */,
 				E772A1FA2774DA690025AF0F /* AppDelegate.swift in Sources */,
 				E772A1FC2774DA690025AF0F /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +290,7 @@
 				INFOPLIST_FILE = CalendarApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +318,7 @@
 				INFOPLIST_FILE = CalendarApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -346,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E772A2102774E2290025AF0F /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E772A2112774E2290025AF0F /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E772A2102774E2290025AF0F /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E772A1EE2774DA680025AF0F /* Project object */;
 }
