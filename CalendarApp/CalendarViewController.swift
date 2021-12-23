@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import CalendarKit
+import EventKit
 
-class ViewController: UIViewController {
+class CalendarViewController: DayViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        // view.backgroundColor = .red
+        title = "Calendar"
         
     }
 
